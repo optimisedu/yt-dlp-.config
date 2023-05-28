@@ -1,6 +1,7 @@
-# ############################### CONFIG - READ FIRST ##########################################################
-# ALWAYS READ THE MANPAGE, HOWEVER THIS IS MY MOST COMMON SETUP.            #
+# ############################### YT-DLP CONFIG - READ FIRST ##########################################################
+# ALWAYS READ THE MANPAGE, HOWEVER THIS IS MY MOST COMMON SETUP.                                               #
 # <cmd>$ man yt-dlp #
+# Should work with no further steps but will print an error
 # ------------------------------------------------------------------------------------------------------------ #
 # ##############################    FIRST STEPS    #############################################################
 #
@@ -15,11 +16,13 @@
 # --------------------------------------------------------------------------------------------------------------
 # <cmd>$yt-dlp--dump-user-agent -s |DRYRUN FOR CONFIG                                                                
 # ----------------------------------------------------------------------------------------------------------------
-                               DISCLAIMER                                                                 #
+#                               DISCLAIMER                                                                 #
 # This config is for pentesting. Make sure you know the laws in your country - this config is open source as is yt-dlp. These settings will work, but if you are getting into heavy use, as well as a proxy import browser cookies (in the manual, several methods)
 # ----------------------------------------------------------------------------------------------------------------
 
 # DOWNLOAD SETTINGS
+# remove after first successful download
+--verbose
 ## Not using for playlists (USECASE IF ONE FILE FAILS I WONT WANT THE PLAYLIST ANYWAY - break)
 --abort-on-error
 --retries 3
@@ -53,11 +56,9 @@
 --default-search auto_warning 
 # PLAYLIST Replace with |--playlist| for that case (Automation coming v2 - lots of config flags for playlists)
 --no-playlist
-# --embed-chapters --REQU METADATA
---no-embed-metadata
+# --embed-chapters --REQUIRES METADATA
 
-# Misc / personal
---verbose
+## Misc / personal
 
 ## 0 (b)est 10 (w)orst | postprocessing required
 ## --audio-quality b
