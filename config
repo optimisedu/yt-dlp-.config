@@ -1,0 +1,66 @@
+# ############################### CONFIG - READ FIRST ##########################################################
+# ALWAYS READ THE MANPAGE, HOWEVER THIS IS MY MOST COMMON SETUP.            #
+# <cmd>$ man yt-dlp #
+# ------------------------------------------------------------------------------------------------------------ #
+# ##############################    FIRST STEPS    #############################################################
+#
+# This is one of my current config files for yt-dlp. it works but you will probably want to customise yourself.
+# Use the --ignore-config flag for (Playlists | ASCII Art | Metadata. I suggest looking at these settings).    #
+#
+# if you want thumbnails replace all mentions of thumbnail in this file with     --convert-thumbnails webp for the smallest lossless filesize                                                                               
+# --proxy |URl| NOT REQUIRED STRONGLY ADVISED
+# --geobypass for files blocked by your country so if you don't know LEARN - all in the manual. This setting is for pentesting. Make sure you know the laws in your country - this config is open source as is yt-dlp
+# --ffmpeg-location (read the manual section for FFMPEG postprocessing)
+#  --split-chapters more files more organising
+# --------------------------------------------------------------------------------------------------------------
+# <cmd>$yt-dlp--dump-user-agent -s |DRYRUN FOR CONFIG                                                                
+# ----------------------------------------------------------------------------------------------------------------
+                               DISCLAIMER                                                                 #
+# This config is for pentesting. Make sure you know the laws in your country - this config is open source as is yt-dlp. These settings will work, but if you are getting into heavy use, as well as a proxy import browser cookies (in the manual, several methods)
+# ----------------------------------------------------------------------------------------------------------------
+
+# DOWNLOAD SETTINGS
+## Not using for playlists (USECASE IF ONE FILE FAILS I WONT WANT THE PLAYLIST ANYWAY - break)
+--abort-on-error
+--retries 3
+--fragment-retries 10 
+--progress
+--check-formats
+--fixup warn
+## Path - I have gone with my music folder. It will make dir so won't overwrite your music folder if existing.
+--paths $HOME/music 
+--output (title).%(ext)s
+### good alternatives audio: yt-dlp --parse-metadata "title:%(artist)s - %(title)s" | video yt-dlp --parse-metadata "title:%(artist)s - %(title)s"         $ yt-dlp --parse-metadata "%(series)s S%(season)(episode_number):%(title)s""
+--windows-filenames
+# --no-write-playlist-metafiles
+# Number of seconds to sleep/dl | macro best practices are to act human 
+--min-sleep-interval 2
+--max-sleep-interval 5
+# Number of fragments during download (default is 1, 2-8 is the sweetspot on this system, too high and you will slow down or break)
+--concurrent-fragments 4
+# buffer size MAXIMUM QUALITY MAXIMUM SIZE. Remove or reduce this flag to improve speed and reduce data
+--buffer-size 16k
+--no-resize-buffer
+-fps 30
+
+
+# VIDEO SETTINGS 
+## Subtitle settings - Worth noting if you are charged on data or limited by size or speed do you need subs? (I do, but not thumbnails)
+# --all-subs
+# --embed-subs
+--no-write-thumbnail
+## Warn conflicts but don't break - error logging optional see <cmd>$ man yt-dlp
+--default-search auto_warning 
+# PLAYLIST Replace with |--playlist| for that case (Automation coming v2 - lots of config flags for playlists)
+--no-playlist
+# --embed-chapters --REQU METADATA
+--no-embed-metadata
+
+# Misc / personal
+--verbose
+
+## 0 (b)est 10 (w)orst | postprocessing required
+## --audio-quality b
+## -V can be commented out after the first use but if you have errors you should have all the tools to fix them.
+##  --extract-audio personal most used case, FFMPEG and it's config file advised
+##  --no-embed-subs
