@@ -6,7 +6,7 @@ Feel free to fork.
 Config files are kept %home%/.config/yt-dlp/config following linux conventions. Consider a child config if using with termux (TBA)
 
 
-<h1> OPTIMISEDU YT-DLP CONFIG - READ FIRST </h1>
+<h1> Optimisedu's YTDLP Config </h1>
 <strong> ALWAYS READ THE MANPAGE, HOWEVER THIS IS MY MOST COMMON SETUP.</strong>                                               
 
 <code>man yt-dlp</code> 
@@ -23,9 +23,7 @@ Feel free to fork this repo, I would love to see how you modify this base config
 </code>
 Not required but strongly advised. I have kept settings human. I suggest using a browser cookie/meta if you are using for this purpose
 
-
-
-#### TODO:
+#### Todo:
  - List useful cmds - tldr style
  - Add ffmpeg / other external pkgs for quality and wav/mp3 audio extraction
  - ytfzf suggested. implement fzy search params
@@ -35,6 +33,7 @@ Not required but strongly advised. I have kept settings human. I suggest using a
 
  - Added TODOS
  - Added additional comments re setting options. (edit for clarity)
+ - Updated readme.md
 
 
 This is one of my current config files for yt-dlp. it works but you will probably want to customise yourself.
