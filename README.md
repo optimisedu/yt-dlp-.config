@@ -50,5 +50,5 @@ Audio is more important for me than video. Some suggestions have been given but 
 - Chunked, optimal for my machine, tweak to find the sweet spot on your system (low on old systems or phones)
 - Metadata kept for postprocessing. With termux use that might be undesirable
 - 30 fps should be plenty fast. Don't be stupid wkith filesize save time and data un;ess you know what you are doing and have a usecase for downloading videos at a refresh rate faster than the human eye can register - 30fps is what average tv's run at.
-- regex matching suggestions for different usecases - suggestions coming.
+- Regex matching suggestions for different usecases - suggestions coming.
 
