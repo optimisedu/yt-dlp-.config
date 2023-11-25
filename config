@@ -15,6 +15,11 @@
 # 3. ytfzf suggested. implement fzy search params
 # 4. Setup shell script install and extend extra dependencies 
 
+# CHANGE LOG 25/11/23
+# 1. Added TODOS
+# 2. Added additional comments re setting options. (edit for clarity)
+
+
 # ##############################    FIRST STEPS    #############################################################
 #
 # This is one of my current config files for yt-dlp. it works but you will probably want to customise yourself.
@@ -54,9 +59,9 @@
 # Number of fragments during download (default is 1, 2-8 is the sweetspot on this system, too high and you will slow down or break)
 --concurrent-fragments 4
 # buffer size MAXIMUM QUALITY MAXIMUM SIZE. Remove or reduce this flag to improve speed and reduce data
---buffer-size 16k
+--buffer-size 22k
 --no-resize-buffer
--fps 30
+-fps 30 #for video unlikely to require more - most TV have 24 - 30 FPS and that is perfect for most use cases
 
 
 # VIDEO SETTINGS 
@@ -68,12 +73,16 @@
 --default-search auto_warning 
 # PLAYLIST Replace with |--playlist| for that case (Automation coming v2 - lots of config flags for playlists)
 --no-playlist
-# --embed-chapters --REQUIRES METADATA
+# --embed-chapters --REQUIRES METADATA CAN CREATE BLOAT ENSURE YOU KEEP THIS LEGAL 
 
 ## Misc / personal
 
 ## 0 (b)est 10 (w)orst | postprocessing required
-## --audio-quality b
-## -V can be commented out after the first use but if you have errors you should have all the tools to fix them.
-##  --extract-audio personal most used case, FFMPEG and it's config file advised
+
+## --audio-quality b # SAME AS 10 IF YOU HAVE SLOW INTERNET OR ARE NOT BOTHERED BY QUALITY FIND YOUR OWN SWEET SPOT 
+
+## -V # (VERBOSE - DEBUG ON FIRST USE STRONGLY ADVISED)can be commented out after the first use but if you have errors you should have all the tools to fix them. 
+
+##  --extract-audio  # personal most used case, FFMPEG and it's config file advised
+
 ##  --no-embed-subs
