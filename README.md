@@ -13,17 +13,19 @@ Config files are kept %home%/.config/yt-dlp/config following linux conventions. 
 Should work with no further steps but will print an error
 
 ## IMPORTANT LEGAL WARNING 
-<strong>I DIDN'T CREATE YT-DLP - THIS IS A CONFIG FOR EDUCATIONAL PURPOSES ONLY. DOWNLOADS OF COPYRIGHTED MATERIAL IS ILLEGAL SO DO NOT ABUSE AND BE CAREFUL THAT YOU HAVE PERMISSION IF YOU USE THIS TO SCRAPE ANY PAGE!</strong>
-<strong>yt-dlp is a pentesting tool. I have no affiliation or connection with this open source project.</strong>
+I didn't create YT-DLP - This is a config for educational purposes only. Downlaods of copyrighted material is illegal so do not abuse. Be careful you have permission if you are using tools which scrape webpages! I have no affiliation with this open source project.
+
 Feel free to fork this repo, I would love to see how you modify this base config. 
 
 #### Hypothetical Safety For Pentesters
+
 <code>
   --proxy |YOUR PROXY URL|
 </code>
 Not required but strongly advised. I have kept settings human. I suggest using a browser cookie/meta if you are using for this purpose
 
 #### Todo:
+
  - List useful cmds - tldr style
  - Add ffmpeg / other external pkgs for quality and wav/mp3 audio extraction
  - ytfzf suggested. implement fzy search params
@@ -35,18 +37,18 @@ Not required but strongly advised. I have kept settings human. I suggest using a
  - Added additional comments re setting options. (edit for clarity)
  - Updated readme.md
 
-
 This is one of my current config files for yt-dlp. it works but you will probably want to customise yourself.
 
 ## Audio Focussed
 
 Audio is more important for me than video. Some suggestions have been given but these are my settings. If there is any popularity I will give some child configs. I have tried to comment up some suggestions.
 
+- compatible with Termux on android, fully cross platform.
+- Unlimitedly extendable with python
 - Verbose by default: If you are getting errors you will want to know. (Remove this setting on first use)
 - Drag and drop, run yt-dlp once, then remove the dryrun flag
-- Unlimitedly extendable with python
-- Chunked, optimal for my machine, won't be optimal for everybodies
+- Chunked, optimal for my machine, tweak to find the sweet spot on your system (low on old systems or phones)
 - Metadata kept for postprocessing. With termux use that might be undesirable
-- 30 fps should be plenty fast. Don't be stupid wkith filesize save time and data
+- 30 fps should be plenty fast. Don't be stupid wkith filesize save time and data un;ess you know what you are doing and have a usecase for downloading videos at a refresh rate faster than the human eye can register - 30fps is what average tv's run at.
 - regex matching suggestions for different usecases
 
