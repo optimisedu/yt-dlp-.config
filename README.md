@@ -12,7 +12,31 @@ add:
 </code>
 Not required but strongly advised. I have kept settings human. I suggest using a browser cookie/meta if you are using for this purpose
 
-### Audio Focussed
+
+# ############################### OPTIMISEDU YT-DLP CONFIG - READ FIRST ##########################################################
+# ALWAYS READ THE MANPAGE, HOWEVER THIS IS MY MOST COMMON SETUP.                                               
+
+# <cmd>$ man yt-dlp 
+# Should work with no further steps but will print an error
+
+# ############################### IMPORTANT LEGAL WARNING ##########################################################
+
+ I DIDN'T CREATE YT-DLP - THIS IS A CONFIG FOR EDUCATIONAL PURPOSES ONLY. DOWNLOADS OF COPYRIGHTED MATERIAL IS ILLEGAL SO DO NOT ABUSE AND BE CAREFUL THAT YOU HAVE PERMISSION IF YOU USE THIS TO SCRAPE ANY PAGE.L
+
+## TODO:
+# 1. List useful cmds - tldr style
+# 2. Add ffmpeg / other external pkgs for quality and wav/mp3 audio extraction
+# 3. ytfzf suggested. implement fzy search params
+# 4. Setup shell script install and extend extra dependencies 
+
+<strong>CHANGE LOG 25/11/23</strong>
+ 1. Added TODOS
+ 2. Added additional comments re setting options. (edit for clarity)
+
+
+This is one of my current config files for yt-dlp. it works but you will probably want to customise yourself.
+
+## Audio Focussed
 
 Audio is more important for me than video. Some suggestions have been given but these are my settings. If there is any popularity I will give some child configs. I have tried to comment up some suggestions.
 
