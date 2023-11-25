@@ -6,8 +6,8 @@ Feel free to fork.
 Config files are kept %home%/.config/yt-dlp/config following linux conventions. Consider a child config if using with termux (TBA)
 
 
-<h1> Optimisedu's YTDLP Config </h1>
-<strong> ALWAYS READ THE MANPAGE, HOWEVER THIS IS MY MOST COMMON SETUP.</strong>                                               
+## Optimisedu's YTDLP Config 
+ALWAYS READ THE MANPAGE, HOWEVER THIS IS MY MOST COMMON SETUP.                                              
 
 <code>man yt-dlp</code> 
 Should work with no further steps but will print an error
