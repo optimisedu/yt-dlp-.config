@@ -1,6 +1,6 @@
 
 # ############################### OPTIMISEDU YT-DLP CONFIG - READ FIRST ##########################################################
-# ALWAYS READ THE MANPAGE, HOWEVER THIS IS MY MOST COMMON SETUP.                                               
+# READ THE MANPAGE FOR YT-DLP AS WELL AS MY README FOR IMPORT INFO                                           
 
 # <cmd>$ man yt-dlp 
 # Should work with no further steps but will print an error
@@ -9,27 +9,17 @@
 
 # I DIDN'T CREATE YT-DLP - THIS IS A CONFIG FOR EDUCATIONAL PURPOSES ONLY. DOWNLOADS OF COPYRIGHTED MATERIAL IS ILLEGAL SO DO NOT ABUSE AND BE CAREFUL THAT YOU HAVE PERMISSION IF YOU USE THIS TO SCRAPE ANY PAGE.L
 
-# TODO:
-# 1. List useful cmds - tldr style
-# 2. Add ffmpeg / other external pkgs for quality and wav/mp3 audio extraction
-# 3. ytfzf suggested. implement fzy search params
-# 4. Setup shell script install and extend extra dependencies 
-
-# CHANGE LOG 25/11/23
-# 1. Added TODOS
-# 2. Added additional comments re setting options. (edit for clarity)
-
 
 # ##############################    FIRST STEPS    #############################################################
 #
 # This is one of my current config files for yt-dlp. it works but you will probably want to customise yourself.
-# Use the --ignore-config flag for (Playlists | ASCII Art | Metadata. I suggest looking at these settings).    #
+# Use the --ignore-config flag for (Playlists | ASCII Art | Metadata. I suggest looking at these settings).  
 #
 # if you want thumbnails replace all mentions of thumbnail in this file with     --convert-thumbnails webp for the smallest lossless filesize                                                                               
-# --proxy |URl| NOT REQUIRED STRONGLY ADVISED
-# --geobypass for files blocked by your country so if you don't know LEARN - all in the manual. This setting is for pentesting. Make sure you know the laws in your country - this config is open source as is yt-dlp
-# --ffmpeg-location (read the manual section for FFMPEG postprocessing)
-#  --split-chapters more files more organising
+# --proxy |URl| # NOT REQUIRED STRONGLY ADVISED
+# --geobypass # for files blocked by your country so if you don't know LEARN - all in the manual. This setting is for pentesting. Make sure you know the laws in your country - this config is open source as is yt-dlp
+# --ffmpeg-location # (read the manual section for FFMPEG postprocessing)
+#  --split-chapters # downloads video chapters as seperate files. Not usually advised - may be better as a seperate command
 # --------------------------------------------------------------------------------------------------------------
 # <cmd>$yt-dlp--dump-user-agent -s |DRYRUN FOR CONFIG                                                                
 # ----------------------------------------------------------------------------------------------------------------
