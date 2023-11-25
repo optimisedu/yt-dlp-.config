@@ -17,7 +17,7 @@ Should work with no further steps but will print an error
 <strong>yt-dlp is a pentesting tool. I have no affiliation or connection with this open source project.</strong>
 Feel free to fork this repo, I would love to see how you modify this base config. 
 
-### Hypothetical Safety For Pentesters
+#### Hypothetical Safety For Pentesters
 <code>
   --proxy |YOUR PROXY URL|
 </code>
@@ -25,13 +25,13 @@ Not required but strongly advised. I have kept settings human. I suggest using a
 
 
 
-## TODO:
+#### TODO:
  - List useful cmds - tldr style
  - Add ffmpeg / other external pkgs for quality and wav/mp3 audio extraction
  - ytfzf suggested. implement fzy search params
  - Setup shell script install and extend extra dependencies 
 
-## CHANGE LOG 25/11/23
+#### CHANGE LOG 25/11/23
 
  - Added TODOS
  - Added additional comments re setting options. (edit for clarity)
